@@ -11,26 +11,81 @@ body {
 
 h1 {
 	margin-top: 40px;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	text-align: center;
+}
+
+p {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#container {
+	width: 100%;
 }
 
 div > section {
 	background-color: #B1D7CE;
 	border: 1px solid black;
-	margin: 15px;
-	padding: 5px;
-	float: left;
+	margin-top: 30px;
 }
 
-p {
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
+.title {
+	border: 1px solid black;
+	color: white;
+	width: 40%;
+	text-align: center;
+	position: relative;
+	left: 60%;
 }
 
-@media (min-width: 1200px) {
+.title.t1 {
+	background-color: #81150B;
+}
+
+.title.t2 {
+	background-color: #043E42;
+}
+
+.title.t3 {
+	background-color: #22550D;
+}
+
+@media (min-width: 992px) {
 	.block-dk-3 {
-		width: 33%;
+		float: left;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 33.33%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.block-tb-2 {
+		float: left;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 50%;
+	}
+	#box3 {
+		clear: left;
+		width: 100%;
+	}
+
+	.title.t3 {
+		width: 19%;
+		left: 81%;
+	}
+}
+
+@media (max-width: 767px) {
+	.block-mp-1 {
+		clear: left;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 100%;
 	}
 }
